@@ -46,6 +46,17 @@ console.log(assignGrade(50));
 console.log(assignGrade(30)); */
 
 // The Pluralizer
-function pluralize() {
-
+function pluralize(noun, number) {
+    if(number > 1) {
+        if(noun == "sheep" || noun == "geese")
+            console.log(number + " " + noun);
+        else
+            console.log(number + " " + noun + "s");
+    } else if(number === 1)
+        console.log(number + " " + noun);
 }
+
+/* pluralize("cat", 5);
+pluralize("dog", 1);
+pluralize("sheep", 2);
+pluralize("geese", 4); */
