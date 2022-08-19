@@ -29,6 +29,7 @@ const library = [
     },
 ];
 for (let i = 0; i < library.length; i++) {
+    let book = '"' + library[i].title + '"' + ' by ' + library[i].author;
     console.log(book);
     if (library[i].alreadyRead) console.log('You already read ' + book + '\n');
     else console.log('You still need to read ' + book + '\n');
@@ -39,22 +40,22 @@ const favoriteMovie = {
     duration: '95 minutes',
     stars: ['Zenn Kyi', 'Hla Yin Kyae', 'Nann Wai Wai Htun'],
 };
-/* console.log(favoriteMovie.title + ' lasts for ' + favoriteMovie.duration + '.');
+console.log(favoriteMovie.title + ' lasts for ' + favoriteMovie.duration + '.');
 console.log('Stars: ');
 for (let i = 0; i < favoriteMovie.stars.length; i++) {
     const actor = favoriteMovie.stars[i];
     console.log(actor);
-} */
+}
 
 const recipe = {
     title: 'Milk Rice Padding',
     servings: 1,
     ingredients: ['Rice', 'Milk', 'Egg', 'Sugar'],
 };
-/* console.log('Title : ' + recipe.title);
+console.log('Title : ' + recipe.title);
 console.log('Servings : ' + recipe.servings);
 console.log('Ingredients : ');
 
 for (let i = 0; i < recipe.ingredients.length; i++) {
     console.log(recipe.ingredients[i]);
-} */
+}
